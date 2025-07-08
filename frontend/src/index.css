@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f4f6f9;
+}
+
+/* Reusable Layout */
+.page-layout {
+  max-width: 60%;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #4A90E2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  background-color: #4A90E2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #dce1e7;
+  cursor: not-allowed;
+}
+
+/* Inputs & Forms */
+input,textarea{
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #dce1e7;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus ,textarea:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  display: block;
+}
+
+
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dce1e7;
+}
+
+th {
+  background-color: #f4f6f9;
+  color: #34495e;
+}
+
+td {
+  color: #7f8c8d;
+}
+
+
+
+/* Dropdown */
+select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #dce1e7;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+select option:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .page-layout {
+    padding: 15px;
+  }
+
+  th,
+  td {
+    font-size: 0.875rem;
+  }
+}

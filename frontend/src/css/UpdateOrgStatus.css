@@ -1,0 +1,10 @@
+.radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .org-info {
+    margin-top: 20px;
+    color: #34495e;
+  }
+  
