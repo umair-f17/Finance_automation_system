@@ -1,105 +1,12 @@
+# React + Vite
 
-# Full-Stack MERN Project with MySQL
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-  
+Currently, two official plugins are available:
 
-## Project Setup
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Follow the instructions below to get the project up and running on your local machine.
+## Expanding the ESLint configuration
 
-  
-  
-  
-
-------------------------------------------------------------------------------------------------------------------
-
-  
-
-## Clone the Repository
-
-### Clone the repository using the following command:
-
-  
-
-```bash
-
-git clone https://github.com/umair-f17/Finance-Automation-System.git
-
-```
-
-------------------------------------------------------------------------------------------------------------------
-
-  
-
-## Setup Frontend
-
-  
-
-### Go to the frontend directory and install all dependencies:
-
-```bash
-
-cd frontend
-
-npm install
-
-```
-
-  
-
-### Create a .env file in the backend directory at root level and add the following environment variables:
-
-  
-```bash
-VITE_API_URL=backend-api
-
-To run the frontend:
-
-npm run dev
-
-```
-
---------------------------------------------------------------------------------------------------------------------
-
-  
-
-## Setup Backend
-
-### Go to the backend directory and install all dependencies:
-
-  
-
-```bash
-
-cd backend
-
-npm install
-
-```
-
-### Create a .env file in the backend directory at root level and add the following environment variables:
-
-```bash
-
-  
-
-PORT=your-port
-
-DB_HOST=your-database-host
-
-DB_USER=your-database-username
-
-DB_PASSWORD=your-database-password
-
-DB_NAME=your-database-name
-
-```
-
-  
-
-### To run the backend:
-
-```bash
-
-npm run start
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
