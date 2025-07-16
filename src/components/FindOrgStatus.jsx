@@ -10,6 +10,7 @@ const FindOrgStatus = () => {
   const [search, setSearch] = useState('');
   const apiUrl = import.meta.env.VITE_API_URL
 
+  console.log("apiurl",apiUrl);
   useEffect(() => {
     if (!status) return;
 
