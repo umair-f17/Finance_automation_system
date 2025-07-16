@@ -12,7 +12,11 @@ phases:
     commands:
       - echo Building node app...
 
+cache:
+    paths:
+        - 'node_modules/**/*'
 artifacts:
-  files:
-    - '**/*'
-  base-directory: dist
+    discard-paths: no
+    base-directory: 'dist*'
+    files:
+        - '**/*'
