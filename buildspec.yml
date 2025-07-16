@@ -10,8 +10,8 @@ phases:
 
   build:
     commands:
-      - echo Building React app...
-      - npm run build
+      - echo Building node app...
+      - npm run dev
 
 artifacts:
   files:
