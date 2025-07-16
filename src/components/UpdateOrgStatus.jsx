@@ -37,7 +37,7 @@ const UpdateOrgStatus = () => {
     setLoading(true); 
     setError(''); 
     try {
-      const response = await fetch(`${apiUrl}/organization/disable/${orgId}`, {
+      const response = await fetch(`https://usc43wxytv.us-west-2.awsapprunner.com/organization/disable/${orgId}`, {
         method: 'PUT',
       });
       const data = await response.json();
