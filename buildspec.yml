@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - echo Building Vite React App...
-      - npm run build
+      - npm run build && timeout 10s npm run preview
 
 cache:
   paths:
