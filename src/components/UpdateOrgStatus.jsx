@@ -10,7 +10,8 @@ const UpdateOrgStatus = () => {
   
   const [error, setError] = useState('');
   const apiUrl = import.meta.env.VITE_API_URL;
-
+   
+  console.log("apiurl",apiUrl);
 
   const handleEnable = async () => {
     setOrgData(null)
