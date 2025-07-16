@@ -10,13 +10,15 @@ phases:
 
   build:
     commands:
-      - echo Building node app...
+      - echo Building Vite React App...
+      - npm run build
 
 cache:
-    paths:
-        - 'node_modules/**/*'
+  paths:
+    - 'node_modules/**/*'
+
 artifacts:
-    discard-paths: no
-    base-directory: 'dist*'
-    files:
-        - '**/*'
+  discard-paths: no
+  base-directory: dist
+  files:
+    - '**/*'
