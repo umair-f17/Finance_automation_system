@@ -9,7 +9,7 @@ const UpdateOrgStatus = () => {
   const [loading, setLoading] = useState(false); 
   
   const [error, setError] = useState('');
-  const apiUrl = `https://usc43wxytv.us-west-2.awsapprunner.com`
+  const apiUrl = import.meta.env.VITE_API_URL;
 
 
   const handleEnable = async () => {
