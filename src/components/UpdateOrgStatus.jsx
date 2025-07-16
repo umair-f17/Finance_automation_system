@@ -9,7 +9,7 @@ const UpdateOrgStatus = () => {
   const [loading, setLoading] = useState(false); 
   
   const [error, setError] = useState('');
-  const apiUrl = import.meta.env.VITE_API_URL
+  const apiUrl = `https://usc43wxytv.us-west-2.awsapprunner.com`
 
 
   const handleEnable = async () => {
@@ -37,7 +37,7 @@ const UpdateOrgStatus = () => {
     setLoading(true); 
     setError(''); 
     try {
-      const response = await fetch(`https://usc43wxytv.us-west-2.awsapprunner.com/organization/disable/${orgId}`, {
+      const response = await fetch(`${apiUrl}/organization/disable/${orgId}`, {
         method: 'PUT',
       });
       const data = await response.json();
